@@ -9,7 +9,10 @@
 </head>
 <body>
 <div id="root" class="container">
-    <div id="top-nav" class="top-nav">
+    <div class="m-artical-action">
+        <div id="action-mid" class="artical-action-mid"></div>
+    </div>
+    <div id="top-nav" class="top-nav" style="display:none">
         <div class="icon-back"></div>
         <div class="nav-title">返回书架</div>
     </div>
@@ -47,15 +50,15 @@
             <li id="next-button">下一章</li>
         </ul>
     </div>
-    <div id="bottom-nav" class="bottom-nav">
+    <div id="bottom-nav" class="bottom-nav" style="display:none">
         <ul>
-            <li class="icon-catalog"><span></span>目录</li>
-            <li class="icon-font"><span></span>字体</li>
-            <li class="icon-theme-day"><span></span>白天</li>
+            <li id="catalog-btn" class="icon-catalog"><span></span>目录</li>
+            <li id="font-btn" class="icon-font"><span></span>字体</li>
+            <li id="theme-btn" class="icon-theme-day"><span></span>白天</li>
         </ul>
         <div class="bottom-bg"></div>
     </div>
-    <div id="font-container" class="nav-pannel">
+    <div id="font-container" class="nav-pannel" style="display:none">
         <div class="child-mod">
             <span>字号</span>
             <button id="large-font" class="font-size-button">大</button>
@@ -64,7 +67,7 @@
         <div class="child-mod">
             <span>背景</span>
             <div class="bg-container orange">
-                <div class="bg-container-current"></div>
+                <div></div>
             </div>
             <div class="bg-container gray">
                 <div></div>
