@@ -169,7 +169,7 @@ body {
 .nav-pannel-bg{
     z-index:-1;
     position:absolute;
-    top:0px;
+    top:0;
     height:135px;
     width:100%;
     background:#000;
