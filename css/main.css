@@ -6,7 +6,6 @@ html {
 
 body {
     width: 100%;
-    font-family: '微软雅黑';
     text-align: left;
     background: #e9dfc7;
 }
@@ -227,6 +226,9 @@ body {
 }
 .yellow{
     background: #F0E68C;
+}
+.night{
+    background:#5B5B5B;
 }
 .m-artical-action{
 
