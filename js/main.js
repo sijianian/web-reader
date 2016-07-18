@@ -11,12 +11,11 @@
         fontContainer: $('#font-container'),
         largeFont: $('#large-font'),
         smallFont: $('#small-font'),
-        fictionContainer: $('#fiction-container'),
+        fictionContainer: $('#fiction-container')
     };//常用的dom对象
     var win = $(window);//界面窗口
     var $body = $('body');//文档body
     var colorBtns = $('.bg-container');//背景颜色切换按钮
-    var readerModel;
     var readerUI;
     var initFont, initFontColor, initColorBtn, initBgColor, initTheme, initThemeCn;//界面UI数据
 
@@ -344,7 +343,7 @@
     function main() {
         loadInitData();
         readerRset();
-        readerModel = readerModel();
+        var readerModel=readerModel();
         readerUI = readerBaseFrame(dom.fictionContainer);
         readerModel.init(function (data) {
             readerUI(data);
