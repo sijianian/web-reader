@@ -343,7 +343,7 @@
     function main() {
         loadInitData();
         readerRset();
-        var readerModel=readerModel();
+        readerModel=readerModel();
         readerUI = readerBaseFrame(dom.fictionContainer);
         readerModel.init(function (data) {
             readerUI(data);
