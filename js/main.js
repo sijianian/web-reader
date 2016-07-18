@@ -100,7 +100,7 @@
                 if (chapter_id == null) {
                     chapter_id = data.chapters[1].chapter_id;
                 }
-                chapterTotal =4;
+                chapterTotal = 4;
                 callback && callback();
             }, 'json');
         };
@@ -118,7 +118,7 @@
             chapter_id = parseInt(chapter_id, 10);
             chapter_id -= 1;
             if (chapter_id < 1) {
-                chapter_id=1;
+                chapter_id = 1;
                 return;
             }
             myUtil.storageSetter('initChapter', chapter_id);
@@ -128,7 +128,7 @@
             chapter_id = parseInt(chapter_id, 10);
             chapter_id += 1;
             if (chapter_id > chapterTotal) {
-                chapter_id=4;
+                chapter_id = 4;
                 return;
             }
             myUtil.storageSetter('initChapter', chapter_id);
@@ -343,7 +343,7 @@
     function main() {
         loadInitData();
         readerRset();
-        readerModel=readerModel();
+        readerModel = readerModel();
         readerUI = readerBaseFrame(dom.fictionContainer);
         readerModel.init(function (data) {
             readerUI(data);
